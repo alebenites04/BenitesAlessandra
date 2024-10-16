@@ -1,0 +1,167 @@
+/* Colores personalizados */
+.bg-crema {
+    background-color: #f9f1e7;
+}
+
+.bg-marron-claro {
+    background-color: #d9c9b2;
+}
+
+.text-crema {
+    color: #f9f1e7;
+}
+
+.text-marron {
+    color: #8e735b;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-180deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0);
+        opacity: 1;
+    }
+}
+
+/* Clases de animación */
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.animate-slide-in-left {
+    animation: slideInLeft 1.5s ease-out;
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 1.5s ease-out;
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+.animate-zoom-in {
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.animate-rotate-in {
+    animation: rotateIn 1s ease;
+}
+
+/* Galería de imágenes */
+.galeria {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.galeria img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.video-container video {
+    width: 30%;
+    border-radius: 10px;
+}
+footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #8e735b;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+footer a {
+    color: #f9f1e7;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #d9c9b2;
+}
+
+footer .d-flex a {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    footer .col-md-4,
+    footer .col-md-2,
+    footer .col-md-3 {
+        text-align: center;
+    }
+
+    footer .d-flex {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
